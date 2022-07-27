@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>HTML복습</title>
+  </head>
+  <body>
+    <h1>자바스크립트</h1>
+    <p>
+      <strong>Javascript</strong> ipsum dolor sit amet, consectetur adipisicing
+      elit. Commodi, dolorum. Sit culpa nemo quis aliquam vel commodi vero ab
+      esse quidem deserunt aliquid aperiam optio, natus facere nam dolores
+      recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Commodi, dolorum. Sit culpa nemo quis aliquam vel commodi vero ab esse
+      quidem deserunt aliquid aperiam optio, natus facere nam dolores
+      recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Commodi, dolorum. Sit culpa nemo quis aliquam vel commodi vero ab esse
+      quidem deserunt aliquid aperiam optio, natus facere nam dolores
+      recusandae.
+    </p>
+    <script src="./index.js"></script>
+    <input type="button" value="공부하기" onclick="clickButton()" />
+    <h2>자료형 정리</h2>
+    <script>
+      let number1 = 2;
+      let number2 = 8;
+      document.write(number1 + number2);
+      document.write("<br/>");
+      document.write(number1 - number2);
+      document.write(number1 * number2);
+      document.write("<br/>");
+      document.write(number1 + number2);
+      document.write(Math.ceil(3.14));
+
+      let array1 = ["a", "b", "c", "d", "e"];
+
+      document.write("<br/>");
+      document.write(array1[0]);
+      document.write("<br/>");
+      document.write(array1[3]);
+      document.write("<br/>");
+      function printText(text) {
+        document.write(text);
+        document.write("<br/>");
+        return " 함수가 반환해 주는 값";
+      }
+      let variable = printText();
+      document.write(variable);
+      document.write("<br/>");
+      document.write(printText);
+    </script>
+  </body>
+</html>

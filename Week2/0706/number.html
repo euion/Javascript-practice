@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>숫자와 문자열</h2>
+    이런 상황을 피해서 코드를 작성하자<br />
+    <script>
+      document.write(1 + 1);
+      document.write("<br />");
+      document.write("1" + "1");
+      document.write("<br />");
+      document.write(1 + "1");
+      document.write("<br />");
+      document.write("1" + "1" - "1");
+      document.write("<br />");
+      document.write(typeof ("1" - "1"));
+    </script>
+
+    <h2>함수</h2>
+    <script>
+      let principal = 100;
+      let interest = 0.1;
+      let month = 2;
+      document.write(principal * interest * month);
+      document.write("<br>");
+
+      function calculateInterest(p, m, i = 0.3) {
+        return p * m * i;
+      }
+      document.write(calculateInterest(100, 2));
+      document.write("<br>");
+    </script>
+
+    <h2>배열</h2>
+    <script>
+      let animals = ["낙타", "곰", "돼지"];
+      document.write(animals);
+      document.write("<br>");
+      document.write(animals.pop());
+      document.write("<br>");
+      document.write(animals.push("고슴도치"));
+      document.write("<br>");
+      document.write(animals);
+      document.write("<br>");
+    </script>
+    <h2>객체</h2>
+    <script>
+      let animal = {
+        cow: "🐂",
+        pig: "🐖",
+        camel: "🐫",
+      };
+      function crying() {
+        document.write("멍멍");
+        return "멍멍";
+      }
+      document.write(animal);
+      document.write("<br>");
+      document.write(animal.cow);
+      document.write("<br>");
+      document.write(animal["pig"]);
+      document.write("<br>");
+      document.write(JSON.stringify(animal));
+      document.write("<br>");
+      let 변수 = animal.crying();
+      let 변수2 = crying(); //함수명만 바로 입력
+    </script>
+    <h2>undefined, null, NaN</h2>
+    <script>
+      let example1;
+      document.write(example1);
+      document.write("<br>");
+      let example2 = null;
+      document.write(example2);
+      document.write("<br>");
+      document.write(3 * "a"); // NaN출력: 숫자를 읽을 수 없는 경우
+      document.write("<br>");
+      document.write("b" + "a");
+      document.write("<br>");
+      document.write("a" * 2);
+    </script>
+    <h2>boolean</h2>
+    <script>
+      let ok = true;
+      document.write(ok);
+      document.write("<br>");
+      let notOk = false;
+      document.write(notOk);
+      document.write("<br>");
+    </script>
+  </body>
+</html>

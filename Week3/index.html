@@ -1,0 +1,18 @@
+<script>
+  function normal() {
+    let val = 2 + 3;
+    console.log(val);
+  }
+
+  function addCallback() {
+    // 2.
+    setTimeout(() => {
+      let sum = 1 + 1;
+      console.log(sum);
+      fn(); //callback
+    }, 2000); // 3초 뒤에 이 코드가 실행되어라.
+  }
+  addCallback(function () {
+    console.log("end"); //3.
+  }); //1.
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>데이터 타입</title>
+  </head>
+  <body>
+    <h2>자바스크립트</h2>
+    <p style="border: 1px solid black" id="Javascript-explain">
+      <strong
+        >Javascript is<span
+          onclick="document.querySelector('#Javascript-explain').innerHTML='ipsum dolor sit amet consecteturadipisicing elit. Provident doloribus architecto velit, dolorem autemipsum ratione alias distinctio veniam quas repellat assumenda eius cumqueconsequatur quam exercitationem optio ducimus officia. Voluptatibutempora ad, quo quae alias reprehenderit cumque illum, tenetur iureinventore culpa laudantium doloribus eaque suscipit sit, praesentium quasiab commodi deserunt? Provident, sapiente. Quidem consectetur saepe quiautem.'"
+          >...</span
+        ></strong
+      >
+    </p>
+    <h2>파이썬</h2>
+    <p style="border: 1px solid black">
+      Python is
+      <span
+        style="background-color: gray; padding: 0 5px; cursor: pointer"
+        onclick="
+        this.style.display = 'none';
+        document.querySelector('#python-explain').style.display = 'inline';
+        "
+      >
+        ...
+      </span>
+      <span id="python-explain" style="display: none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cumque
+        dolore fugiat quia dolores? Sed sit quod, perferendis, adipisci
+        voluptate mollitia nemo earum aperiam minus ab repellat consequatur
+        repellendus rem.
+      </span>
+    </p>
+    <input
+      type="button"
+      value="night"
+      onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('p').style.borderColor = 'white';
+    "
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        document.querySelector('p').style.borderColor = 'black';
+        "
+    />
+  </body>
+</html>
